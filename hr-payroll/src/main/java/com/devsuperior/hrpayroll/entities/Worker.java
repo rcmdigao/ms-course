@@ -1,5 +1,6 @@
 package com.devsuperior.hrpayroll.entities;
 
+import javax.swing.*;
 import java.io.Serializable;
 
 public class Worker implements Serializable {
@@ -12,6 +13,7 @@ public class Worker implements Serializable {
 
     public Worker() {
     }
+
 
     public Worker(Long id, String name, Double dailyIncome) {
         this.id = id;
