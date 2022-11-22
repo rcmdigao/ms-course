@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 // Componente gerenciado pelo Spring
 @Component
 // FeignClient: nome-do-projeto, url e o caminho
-@FeignClient(name = "hr-worker", url = "localhost:8081", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 
     @GetMapping(value = "/{id}")
